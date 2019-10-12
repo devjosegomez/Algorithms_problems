@@ -15,4 +15,19 @@ public class Recursion {
 		
 		return result;
 	}
+	
+	//Stacking numbers in Ascending order
+	
+	public void buildLayerAsc(int N) {
+		if(N == 0) return;
+		
+		buildLayerAsc(N-1);
+		
+		System.out.println(N);
+	}
+	
+	//Stacking numbers in Descending order
+	public void buildLayerDesc(int N) {
+		
+	}
 }
