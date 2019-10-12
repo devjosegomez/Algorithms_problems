@@ -11,7 +11,7 @@ public class Algorithms {
 		Recursion recursion = new Recursion();
 		
 		//Sum methods
-		System.out.println("Enter the number to sum: ");
+		System.out.println("[Enter the number to sum: ]");
 		number = input.nextInt();
 		
 		System.out.println("Sum...");
@@ -19,12 +19,17 @@ public class Algorithms {
 		System.out.println("Result with for: " + recursion.sumWithFor(number));
 		
 		//Stacking methods
-		System.out.println("Enter a number to Stack: ");
+		System.out.println("[Enter a number to Stack: ]");
 		number = input.nextInt();
 		
 		System.out.println("Stacking...");
+		//Asc order
 		System.out.println("-Asc order: ");
 		recursion.buildLayerAsc(number);
+		//Desc order
+		System.out.println("-Desc order: ");
+		recursion.buildLayerDesc(number);
+		
 		
 		//close scanner
 		input.close();

@@ -28,6 +28,10 @@ public class Recursion {
 	
 	//Stacking numbers in Descending order
 	public void buildLayerDesc(int N) {
+		if(N == 0) return;
 		
+		System.out.println(N);
+		
+		buildLayerDesc(N-1);
 	}
 }
