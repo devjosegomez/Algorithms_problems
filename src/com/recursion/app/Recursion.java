@@ -41,4 +41,16 @@ public class Recursion {
 		
 		return N * factorial(N-1);
 	}
+	
+	//Factorial with accumulator (faster solution)
+	public int factorialAccumulator(int accumulator, int N) {
+		if(N == 1) return accumulator;
+		
+		return factorialAccumulator(accumulator * N , N-1);
+	}
+	
+	//Only return the results this way is faster
+	public int fasterFactorial(int N) {
+		return factorialAccumulator(1, N );
+	}
 }
