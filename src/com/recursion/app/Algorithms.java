@@ -30,6 +30,13 @@ public class Algorithms {
 		System.out.println("-Desc order: ");
 		recursion.buildLayerDesc(number);
 		
+		//Factorial
+		System.out.println("[Enter a number to factorial: ]");
+		number = input.nextInt();
+		
+		System.out.println("Factoring...");
+		System.out.println("The factorial of " + number + " is: ");
+		System.out.println(recursion.factorial(number));
 		
 		//close scanner
 		input.close();
